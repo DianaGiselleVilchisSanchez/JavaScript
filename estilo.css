@@ -1,0 +1,73 @@
+/*selector universal (afecta todas las etiquetas)*/
+*{
+    margin : 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*selector de etiqueta*/
+body{
+    background: #880E4F;
+    
+}
+/*selector de clase*/
+.content-form {
+    width: 350px; /*width define el tamaño de ancho*/
+    height: 400px; /*tamaño de alto*/
+    background: #AD1457; /*color de fondo*/
+    margin: auto;
+    padding: 30px; /* espaciado entre cajas y botones*/
+    margin-top:30px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 3px solid #D81B60;
+    border-radius:20px;
+    /*sombra para el formulario*/
+    box-shadow: 10px 25px 50px #FF4081;
+}
+
+h3, h4{
+    text-align: center;
+    color:plum;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.cajas-texto {
+    width : 95%;
+    padding: 5px;
+    margin-bottom:10px;
+    border-radius: 20px;
+}
+
+/* selector de id*/
+#botones, select{
+    width: 100%;
+    padding: 5px;
+    margin-bottom:15px;
+    background: #EC407A;
+    border: 3px solid #F06292;
+    color: black;
+    border-radius: 20px;
+}
+
+/*selector de pseudoclase*/
+#botones:hover{
+background: #F50057;
+color: #F06292;
+padding:  7px;
+cursor: pointer;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style:inherit;
+font-size: medium;
+}
+
+#result{
+    background: #0fa426;
+    color: #f0cc62;
+    padding:  7px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style:inherit;
+    font-size: medium; 
+}

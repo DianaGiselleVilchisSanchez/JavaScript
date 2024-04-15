@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL "REAL JILO"</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--- Modelos de caja son contenedores
+        tipo de selectores
+    1)Universal: aplica a "todo" para aplicarlo:*
+    2)Etiqueta: afecta solo a la etiqueta html "etiquetas h"
+    3)Clase: se accede con un punto, y su identificador y su nombre de la clase
+    4)id: se accede con un # y nombre de id-->
+</head>
+<body> 
+    <section class="content-form">
+        <h3>Bienvenido a Hotel Real Jilo</h3>
+        <form id = "frmHotel">
+
+            <input id ="txtDiasHosp" class="cajas-texto" type = "number" placeholder = "DIAS HOSPEDADOS"><br><br>
+            <input id ="txtPrecioDiario" class="cajas-texto" type = "number" placeholder = "Precio De Habitacion"><br> <br>
+            <!---<input type = "button" value = "Calcular Hospedaje">--->
+            <select id ="cmbTipoPago" size="1"> <!--- es una lista de selección---> 
+                <option value="no selecciona">--Seleccione Tipo de Pago--</option>
+                <option value="efectivo">Efectivo</option>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+            </select>
+            <button id="botones" type= "submit">Calcular Hospedaje</button> <!--para manipular el modelo-->
+            <button id="botones" type= "reset">Cancelar</button>
+
+        </form>
+        <h4 id = "result"></h4>
+    </section>
+    <script src="js/hotel.js"></script>
+</body>
+</html>
