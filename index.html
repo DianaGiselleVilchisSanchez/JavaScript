@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOTEL "REAL JILO"</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <!--- Modelos de caja son contenedores
-        tipo de selectores
-    1)Universal: aplica a "todo" para aplicarlo:*
-    2)Etiqueta: afecta solo a la etiqueta html "etiquetas h"
-    3)Clase: se accede con un punto, y su identificador y su nombre de la clase
-    4)id: se accede con un # y nombre de id-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ordenamiento de Burbuja</title>
+  <link rel="stylesheet" href="css/burbuja.css">
+  <link rel="stylesheet" href="css/dianagiselle-vilchis-estilo.css">
+  <link rel="icon" href="https://www.bing.com/images/search?view=detailV2&ccid=3FhSHq5x&id=D9FE091A154E3869901ED43D5353BE92C97CFC3E&thid=OIP.3FhSHq5xMXMDZ7gYBZ1nzQHaHa&mediaurl=https%3a%2f%2fstatic.vecteezy.com%2fsystem%2fresources%2fpreviews%2f000%2f564%2f515%2foriginal%2fcar-icon-vector.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.dc58521eae7131730367b818059d67cd%3frik%3dPvx8yZK%252bU1M91A%26pid%3dImgRaw%26r%3d0&exph=5000&expw=5000&q=carros.ico&simid=607998817976131929&FORM=IRPRST&ck=41BB7428D64DA41A74163F449E345CB1&selectedIndex=3">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
 </head>
-<body> 
+<body>
+  <div class="mi-div"></div>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="content">
     <section class="content-form">
-        <h3>Bienvenido a Hotel Real Jilo</h3>
-        <form id = "frmHotel">
+      <h2>Ordenamiento de Burbuja</h2>
 
-            <input id ="txtDiasHosp" class="cajas-texto" type = "number" placeholder = "DIAS HOSPEDADOS"><br><br>
-            <input id ="txtPrecioDiario" class="cajas-texto" type = "number" placeholder = "Precio De Habitacion"><br> <br>
-            <!---<input type = "button" value = "Calcular Hospedaje">--->
-            <select id ="cmbTipoPago" size="1"> <!--- es una lista de selección---> 
-                <option value="no selecciona">--Seleccione Tipo de Pago--</option>
-                <option value="efectivo">Efectivo</option>
-                <option value="tarjeta">Tarjeta de Crédito</option>
-            </select>
-            <button id="botones" type= "submit">Calcular Hospedaje</button> <!--para manipular el modelo-->
-            <button id="botones" type= "reset">Cancelar</button>
-
-        </form>
-        <h4 id = "result"></h4>
+      <form id="burbuja-form">
+        <label for="numeros">Ingrese números separados por comas:</label><br><br>
+        <input type="text" id="numeros" placeholder="Ingrese números separados por comas"><br><br>
+        <label for="tipoOrden">Seleccione el tipo de ordenamiento:</label>
+        <select id="tipoOrdenamiento">
+          <option value="ascendente">Ordenar Ascendente</option>
+          <option value="descendente">Ordenar Descendente</option>
+        </select><br>
+        <button type="button" onclick="ordenarBurbuja()">Ordenar</button>
+        <button type="button" onclick="limpiar()">Cancelar</button>
+      </form>
+      <h4 id="resultado"></h4>
     </section>
-    <script src="js/hotel.js"></script>
-</body>
-</html>
+    <script src="js/burbuja.js"></script>
+  </body>
+  </html>
