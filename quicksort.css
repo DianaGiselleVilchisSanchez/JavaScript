@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #DAE2F8;
+  }
+  
+  
+  #main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .content-form {
+    width: 300px;
+    background: #e8daef10; /* Color de fondo del formulario */
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    border: 3px solid #7D3C98; /* Color del borde */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #9B59B6; /* Sombra */
+  }
+  
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  button, select {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    background: #8612b8; /* Color del botón */
+    color: #0e0d0d; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #101010; /* Color del resultado */
+  }
+  
+  h2 {
+    color: #0f0f0f; /* Color del encabezado */
+  }
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(coral), to(rebeccapurple));
+    background: linear-gradient(rgb(222, 116, 239), rgb(165, 53, 137));
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    grid-gap: 20px;
+    max-width: 480px;
+    transform: rotate(45deg);
+    position: absolute;
+    left: 10px;
+}
+
+.grid div {
+    background: rgba(197, 160, 248, 0.218);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 20px;
+    color: transparent;
+    box-shadow: 30px 30px 30px -20px rgba(0, 0, 0, 0.6);
+    border-radius: 2px;
+}
+
+.grid div:nth-child(odd) {
+    animation: pulse 1000ms ease-in-out infinite alternate;
+}
+
+.grid div:nth-child(even) {
+    animation: pulse 1000ms 1000ms ease-in-out infinite alternate;
+}
+
+@keyframes pulse {
+    to {
+        transform: translate3d(0px, 0px, -60px);
+        box-shadow: 15px 15px 20px -20px rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+  
