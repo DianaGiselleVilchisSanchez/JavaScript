@@ -3,37 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ordenamiento Quicksort</title>
-  <link rel="stylesheet" href="css/quicksort.css">
+  <title>Ordenamiento Shell Sort</title>
+  <link rel="stylesheet" href="css/shellsort.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="grid">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-  </div>
-  <div id="main-container">
-    <section class="content-form">
-      <h2>Ordenamiento Quicksort</h2><br><br>
-      <form id="quicksort-form">
-        <input type="text" id="numbers" placeholder="Ingrese números separados por comas"><br><br>
-        <label for="orden">Seleccione el tipo de ordenamiento:</label><br><br>
-        <select id="orden">
-          <option value="ascendente">Ordenamiento Ascendente</option>
-          <option value="descendente">Ordenamiento Descendente</option>
-        </select><br><br>
-        <button type="button" onclick="ordenarQuicksort()">Ordenar</button>
-        <button type="button" onclick="limpiar()">Cancelar</button>
-      </form>
-      <div id="resultado"></div>
-    </section>
-  </div>
-  <script src="js/quicksort.js"></script>
+
+<div class="center-container">
+  <div class="content-form">
+    <h2>Ordenamiento Shell Sort</h2>
+
+    <form id="shellSortForm">
+      <label for="numeros">Ingrese números separados por comas:</label>
+      <input type="text" id="numeros" placeholder="Ejemplo: 5, 2, 8, 1, 4"><br><br>
+
+      <label for="tipoOrden">Seleccione el tipo de ordenamiento:</label>
+      <select id="tipoOrden">
+        <option value="ascendente">Ordenamiento Ascendente</option>
+        <option value="descendente">Ordenamiento Descendente</option>
+      </select><br><br>
+
+      <button type="button" onclick="ordenarShellSort()">Ordenar</button>
+      <button type="button" onclick="limpiar()">Cancelar</button>
+    </form>
+	<div id="background-wrap">
+		<div class="bubble x1"></div>
+		<div class="bubble x2"></div>
+		<div class="bubble x3"></div>
+		<div class="bubble x4"></div>
+		<div class="bubble x5"></div>
+		<div class="bubble x6"></div>
+		<div class="bubble x7"></div>
+		<div class="bubble x8"></div>
+		<div class="bubble x9"></div>
+		<div class="bubble x10"></div>
+	</div>
+	
+    <h3>Resultado:</h3>
+    <div id="resultado"></div>
+<script src="js/shellsort.js"></script>
 </body>
 </html>
