@@ -3,44 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ordenamiento Shell Sort</title>
-  <link rel="stylesheet" href="css/shellsort.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Búsqueda Secuencial</title>
+  <link rel="stylesheet" href="css/secuencial.css">
 </head>
 <body>
-
-<div class="center-container">
-  <div class="content-form">
-    <h2>Ordenamiento Shell Sort</h2>
-
-    <form id="shellSortForm">
-      <label for="numeros">Ingrese números separados por comas:</label>
-      <input type="text" id="numeros" placeholder="Ejemplo: 5, 2, 8, 1, 4"><br><br>
-
-      <label for="tipoOrden">Seleccione el tipo de ordenamiento:</label>
-      <select id="tipoOrden">
-        <option value="ascendente">Ordenamiento Ascendente</option>
-        <option value="descendente">Ordenamiento Descendente</option>
-      </select><br><br>
-
-      <button type="button" onclick="ordenarShellSort()">Ordenar</button>
-      <button type="button" onclick="limpiar()">Cancelar</button>
-    </form>
-	<div id="background-wrap">
-		<div class="bubble x1"></div>
-		<div class="bubble x2"></div>
-		<div class="bubble x3"></div>
-		<div class="bubble x4"></div>
-		<div class="bubble x5"></div>
-		<div class="bubble x6"></div>
-		<div class="bubble x7"></div>
-		<div class="bubble x8"></div>
-		<div class="bubble x9"></div>
-		<div class="bubble x10"></div>
-	</div>
-	
-    <h3>Resultado:</h3>
-    <div id="resultado"></div>
-<script src="js/shellsort.js"></script>
+  <div class="container">
+    <div class="content">
+      <div class="left-panel">
+        <img src="https://1.bp.blogspot.com/-osnmTBMAEOU/YNImW815i-I/AAAAAAAAAHI/wZSt5WsKTLk15KkePCQNNroRSWaUX_6AQCLcBGAsYHQ/s600/05E.gif" alt="Gif" class="gif-image">
+      </div>
+      <div class="right-panel">
+        <h2>Búsqueda Secuencial</h2>
+        <label for="numbersInput">Ingrese números separados por comas:</label>
+        <input type="text" id="numbersInput" placeholder="Ejemplo: 5, 2, 8, 1, 4">
+        <label for="searchInput">Ingrese el número a buscar:</label>
+        <input type="text" id="searchInput" placeholder="Ingrese un número"><br><br>
+        <button onclick="buscar()">Buscar</button>
+        <button onclick="cancelar()">Cancelar</button>
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
+  <div class="ocean">
+    <div class="wave"></div>
+    <div class="wave"></div>
+  </div>
+  <script src="js/secuencial.js"></script>
 </body>
 </html>
