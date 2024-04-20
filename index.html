@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Búsqueda Secuencial</title>
-  <link rel="stylesheet" href="css/secuencial.css">
+  <title>Búsqueda Binaria</title>
+  <link rel="stylesheet" href="css/binaria.css">
 </head>
 <body>
   <div class="container">
@@ -13,21 +13,37 @@
         <img src="https://1.bp.blogspot.com/-osnmTBMAEOU/YNImW815i-I/AAAAAAAAAHI/wZSt5WsKTLk15KkePCQNNroRSWaUX_6AQCLcBGAsYHQ/s600/05E.gif" alt="Gif" class="gif-image">
       </div>
       <div class="right-panel">
-        <h2>Búsqueda Secuencial</h2>
-        <label for="numbersInput">Ingrese números separados por comas:</label>
-        <input type="text" id="numbersInput" placeholder="Ejemplo: 5, 2, 8, 1, 4">
-        <label for="searchInput">Ingrese el número a buscar:</label>
-        <input type="text" id="searchInput" placeholder="Ingrese un número"><br><br>
-        <button onclick="buscar()">Buscar</button>
-        <button onclick="cancelar()">Cancelar</button>
-        <p id="result"></p>
+        <h2>Búsqueda Binaria</h2>
+        <form id="binarySearchForm">
+          <label for="numbersInput">Ingrese números en orden:</label>
+          <input type="text" id="numbersInput" placeholder="Ejemplo: 1, 2, 3, 4, 5">
+          <label for="searchInput">Ingrese el número a buscar:</label>
+          <input type="text" id="searchInput" placeholder="Ingrese un número">
+          <div class="button-group">
+            <button type="button" onclick="performBinarySearch()">Buscar</button>
+            <button type="button" onclick="cancelSearch()">Cancelar</button>
+          </div>
+          <p id="result"></p>
+        </form>
       </div>
     </div>
   </div>
-  <div class="ocean">
-    <div class="wave"></div>
-    <div class="wave"></div>
-  </div>
-  <script src="js/secuencial.js"></script>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+<div class="firefly"></div>
+
+  <script src="js/binaria.js"></script>
 </body>
 </html>
