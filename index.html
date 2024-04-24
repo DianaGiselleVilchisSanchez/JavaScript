@@ -1,49 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Búsqueda Binaria</title>
-  <link rel="stylesheet" href="css/binaria.css">
-</head>
-<body>
-  <div class="container">
-    <div class="content">
-      <div class="left-panel">
-        <img src="https://1.bp.blogspot.com/-osnmTBMAEOU/YNImW815i-I/AAAAAAAAAHI/wZSt5WsKTLk15KkePCQNNroRSWaUX_6AQCLcBGAsYHQ/s600/05E.gif" alt="Gif" class="gif-image">
-      </div>
-      <div class="right-panel">
-        <h2>Búsqueda Binaria</h2>
-        <form id="binarySearchForm">
-          <label for="numbersInput">Ingrese números en orden:</label>
-          <input type="text" id="numbersInput" placeholder="Ejemplo: 1, 2, 3, 4, 5">
-          <label for="searchInput">Ingrese el número a buscar:</label>
-          <input type="text" id="searchInput" placeholder="Ingrese un número">
-          <div class="button-group">
-            <button type="button" onclick="performBinarySearch()">Buscar</button>
-            <button type="button" onclick="cancelSearch()">Cancelar</button>
-          </div>
-          <p id="result"></p>
-        </form>
-      </div>
-    </div>
-  </div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
-<div class="firefly"></div>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPLEADO</title>
+    <link rel="stylesheet" href="css/estilos.css">
 
-  <script src="js/binaria.js"></script>
+</head>
+<body> 
+    <section class="content-form">
+        <h3>Bienvenido</h3>
+        <form id = "emplea">
+            
+                <input id ="txtNombre" class="cajas-texto" type = "text" placeholder = "Nombre"><br><br>
+                <input id ="txtNumHorasTrab" class="cajas-texto" type = "text" placeholder = "Numero de Horas Trabajadas"><br> <br>
+                <input id ="txtCuota" class="cajas-texto" type = "text" placeholder = "Cuota Por Hora"><br> <br>
+                <select id ="cmbTipoEmpleado" size="1">
+
+                <option value="no selecciona">--Seleccione Tipo de Empleado--</option>
+                <option value="tipo1">Empleado tipo 1</option>
+                <option value="tipo2">Empleado tipo 2</option>
+                <option value="tipo3">Empleado tipo 3</option>
+                <option value="tipo4">Empleado tipo 4</option>
+            </select>
+            <button id="botones" type= "submit">Calcular Sueldo</button>
+            <button id="botones" type= "reset">Cancelar</button>
+       </form>
+       <h4 id = "result"></h4>
+       </section>
+       <script src="js/emple.js"></script>
 </body>
 </html>
+    
